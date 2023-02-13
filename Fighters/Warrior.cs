@@ -1,6 +1,6 @@
 public class Warrior : Fighter
 {
-    public Warrior (string name, Dice D, Weapon wep)
+    public Warrior(string name, Dice D, Weapon wep)
     :
     base(name, 80, 4,10, D, wep)
     {}
