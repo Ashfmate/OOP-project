@@ -43,7 +43,6 @@ public abstract class Fighter
     {
         return wep.Rank != -1;
     }
-    ~Fighter() {}
     protected Fighter(
         string name, int hp, int speed, int power,Dice D, Weapon wep)
         {
