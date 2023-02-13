@@ -9,18 +9,26 @@
 			var knife = new Knife();
 			var dice = new Dice();
 
+			var Wep = new List<Weapon>();
+
+			Wep.Add(fist);
+			Wep.Add(bat);
+			Wep.Add(knife);
+
+			var rng = new Random();
+
 			List<Fighter> Team1 = new()
 			{
-				new Warrior("Ahmed", dice, fist),
-				new Soldier("Mohammed", dice, knife),
-				new Warrior("Brhoom", dice, bat)
+				new Warrior("Ahmed", dice, Wep[rng.Next(Wep.Count)]),
+				new Soldier("Brhoom", dice, Wep[rng.Next(Wep.Count)]),
+				new Warrior("Mohammed", dice, Wep[rng.Next(Wep.Count)])
 			};
 
 			List<Fighter> Team2 = new()
 			{
-				new Warrior("Alkhateeb", dice, fist),
-				new Soldier("Alsaih", dice, knife),
-				new Warrior("Hitary", dice, bat)
+				new Warrior("Ouais", dice, Wep[rng.Next(Wep.Count)]),
+				new Soldier("Taha", dice, Wep[rng.Next(Wep.Count)]),
+				new Warrior("Noory", dice, Wep[rng.Next(Wep.Count)])
 			};
 
 			Console.WriteLine("-----------------------------------BEGIN-----------------------------------");
