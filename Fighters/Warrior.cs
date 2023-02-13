@@ -23,4 +23,7 @@ public class Warrior : Fighter
 			}
 		}
     }
+
+    ~Warrior() { Console.WriteLine("{0} has left the ring", name); }
+
 }

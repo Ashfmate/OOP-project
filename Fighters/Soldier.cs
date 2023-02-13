@@ -36,4 +36,6 @@ public class Soldier : Fighter
             base.Tick();
         }
     }
+
+    ~Soldier() { Console.WriteLine("{0} has left the ring", name); }
 }
